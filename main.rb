@@ -15,6 +15,11 @@ c1 = Client.new("Ann", rand(20..50), "female")
 c2 = Client.new("Sarah", rand(20..50), "female")
 c3 = Client.new("Molly", rand(20..50), "female")
 
-shelter.client[c1.name] = c1
+shelter.client["#{c1.name.downcase}".to_sym] = c1
+shelter.client["#{c2.name.downcase}".to_sym] = c2
+shelter.client["#{c3.name.downcase}".to_sym] = c3
+
+# shelter.client[:ann].pets[:fido] = shelter.pets[:fido]
+# shelter.pets[:fido] = shelter.client[:ann].pets[:fido]
 
 binding.pry
