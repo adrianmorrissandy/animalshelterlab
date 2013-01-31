@@ -15,3 +15,6 @@ c1 = Client.new("Ann", rand(20..50), "female")
 c2 = Client.new("Sarah", rand(20..50), "female")
 c3 = Client.new("Molly", rand(20..50), "female")
 
+shelter.client[c1.name] = c1
+
+binding.pry
