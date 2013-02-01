@@ -107,7 +107,7 @@ while response != 'q'
     puts "And to whom am I speaking?"
     client = gets.chomp.downcase
     if shelter.client[client.to_sym]
-      puts "\nWelcome back #{name}!\n".color(:blue)
+      puts "\nWelcome back #{shelter.client[client.to_sym].name}!\n".color(:blue)
       print "What's your dog's name? ".color(:yellow)
       name = gets.chomp.capitalize
       print "What's your dog's age? ".color(:yellow)
