@@ -1,9 +1,9 @@
 require 'pry'
 
 class Shelter
-  attr_accessor :shelter_name, :pets, :client
-  def initialize(shelter_name)
-  @shelter_name = shelter_name
+  attr_accessor :name, :pets, :client
+  def initialize(name)
+  @name = name
   @pets = {}
   @client = {}
 end
